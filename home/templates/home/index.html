@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кав'ярня</title>
+
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+</head>
+
+<body>
+
+<header>
+    <h1>Aroma Coffee</h1>
+    <nav>
+        <h3>
+            <button id="theme-toggle">🌙</button>
+        </h3>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Смак справжньої кави</h1>
+</div>
+
+<section id="about">
+    <h2>Про нас</h2>
+    <h3>
+        Ми — затишна кав'ярня, де ви можете насолодитися ароматною кавою,
+        свіжою випічкою та приємною атмосферою.
+    </h3>
+</section>
+
+<section id="menu">
+    <h2>Меню</h2>
+
+    <div class="menu">
+        <div class="card">
+            <h3>Еспресо</h3>
+            <b>Класична міцна кава</b>
+            <strong>40 грн</strong>
+        </div>
+
+        <div class="card">
+            <h3>Капучино</h3>
+            <b>Кава з молочною пінкою</b>
+            <strong>60 грн</strong>
+        </div>
+
+        <div class="card">
+            <h3>Лате</h3>
+            <b>Ніжна кава з молоком</b>
+            <strong>65 грн</strong>
+        </div>
+
+        <div class="card">
+            <h3>Круасан</h3>
+            <b>Свіжа випічка</b>
+            <strong>50 грн</strong>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Контакти</h2>
+    <b>📍 Київ</b>
+    <b>📞 +380 00 000 0000</b>
+</section>
+
+<footer>
+    <b>© 2026 Coffee</b>
+</footer>
+
+<script>
+    const toggle = document.getElementById('theme-toggle');
+
+    toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+    });
+</script>
+
+</body>
+</html>
